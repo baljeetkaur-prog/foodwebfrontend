@@ -10,7 +10,7 @@ function Products()
     const fetchproducts=async()=>{
         try
         {
-            const apiresp=await axios.get(`${process.env.REACT_APP_APIURL}/fetchproducts`); 
+            const apiresp=await axios.get(`${process.env.REACT_APP_APIURL}/api/fetchproducts`); 
             if(apiresp.data.success===true)
             {
                 setproducts(apiresp.data.result); 
