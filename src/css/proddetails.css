@@ -1,0 +1,78 @@
+body{
+    margin:0; 
+    padding:0; 
+}
+.proddetails{
+    display: flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    padding: 40px; 
+    gap: 40px; 
+    max-width: 1200px; 
+    margin:auto; 
+}
+.proddetailimage{
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 500px; 
+}
+.proddetailimage img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+}
+.productdetailinfo{
+    flex: 1; 
+    min-width: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 10px; 
+}
+.proddetailhead{
+    font-weight: bold; 
+    color: #c0392b;
+}
+.productdetailinfo p{
+    font-size: 1.1rem; 
+    color: #000; 
+}
+.productdetailinfo strong{
+    color: #000; 
+}
+.quantitysel{
+    display: flex; 
+    align-items:center; 
+    gap:10px; 
+}
+.quantitysel label{
+    font-weight: bold; 
+}
+.quantitysel input[type="number"]{
+    width: 60px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: center; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+.quantitysel input[type="number"]:focus{
+    border-color:  #b30505;
+}
+.addtocartbtn{
+    padding:12px; 
+    background-color: #ff7043;
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    font-weight:bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
+} 
+.addtocartbtn:hover{
+    background-color:  #e65100;
+}

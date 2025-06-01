@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.userscontainer {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.usercontent {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #ff6f00;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.tablewrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.usertable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    table-layout: fixed; /* Added */
+}
+
+.usertable th, .usertable td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0e0d6;
+    font-size: 16px;
+    color: #333;
+}
+
+.usertable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #ff6f00;
+    color: white;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.usertable tr:hover {
+    background-color: #fff3e0;
+}
+
+.deluserbutton {
+    background-color: #ff7043;
+    border-radius: 6px;
+    padding:12px; 
+    cursor: pointer; 
+    border:none; 
+    font-weight: bold; 
+    color: white; 
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.deluserbutton:hover {
+    background-color: #e65100;
+}
+
+@media (max-width: 768px) {
+    .usercontent {
+        padding: 20px;
+    }
+
+    .usertable th, .usertable td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

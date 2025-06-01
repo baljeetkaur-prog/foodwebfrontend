@@ -1,0 +1,96 @@
+body{
+  margin:0; 
+  padding:0; 
+}
+.checkoutcontainer{
+  width: 900px; 
+  margin: 40px auto; 
+  padding: 30px 40px; 
+  background-color: #ffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+  border-radius: 10px; 
+  color: #333; 
+}
+.checkoutcontainer h2{
+  text-align: center; 
+  font-weight: 700; 
+  font-size: 2rem; 
+  margin-bottom: 30px; 
+  color: #c0392b;
+}
+.checkoutform label{
+  display: block; 
+  font-weight: 600; 
+  margin-bottom: 8px; 
+  margin-top: 20px; 
+  color: #444; 
+}
+.checkoutform input[type="text"], .checkoutform input[type="password"], .checkoutform select{
+  width: 100%; 
+  padding: 10px 14px; 
+  border: 1.8px solid #ccc; 
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+.checkoutform input[type="text"]:focus,
+.checkoutform input[type="password"]:focus,
+.checkoutform select:focus {
+  border-color: #c0392b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(230, 37, 37, 0.3);
+}
+.checkoutform input[type="radio"],
+.checkoutform input[type="checkbox"]{
+  accent-color: #c0392b;
+
+}
+
+.savedaddressselector label {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+  display: block;
+}
+.checkoutform input[type="checkbox"],
+.checkoutform input[type="radio"] {
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.paymenthead {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #222;
+}
+.carddetails {
+  margin-top: 15px;
+}
+
+.checkoutsummary {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.placeorderbtn {
+  padding: 12px; 
+    color: white; 
+    background: #ff7043;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
+    border: none; 
+    border-radius: 6px; 
+}
+.placeorderbtn:hover{
+  background-color: #e65100;
+
+}
+
+@media (max-width: 650px) {
+  .checkoutcontainer {
+    margin: 20px;
+    padding: 20px;
+  }
+}

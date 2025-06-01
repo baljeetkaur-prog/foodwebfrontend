@@ -1,0 +1,72 @@
+/* Container for the whole search result page */
+.searchprodcontainer {
+margin: 10px auto; 
+}
+
+/* Heading at the top */
+.searchhead {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #c0392b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Container for all product cards */
+.prodone {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px; 
+}
+
+/* Each product card */
+.searchresultcontainer {
+  flex: 1 1 180px;          /* Grow/shrink, basis 180px */
+  max-width: 220px;         /* Max width so cards don’t get too wide */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #333;
+}
+
+/* Hover effect for product cards */
+.searchresultcontainer:hover {
+  box-shadow: 0 6px 12px rgba(192, 57, 43, 0.4);
+  transform: translateY(-5px);
+  color: #c0392b;
+}
+
+/* Product image styling */
+.searchprodimg {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+}
+
+/* Product name */
+.searchheadname {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Loading and No results messages */
+.searchcontainer > p,
+.searchcontainer > h2 {
+  text-align: center;
+  color: #555;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}

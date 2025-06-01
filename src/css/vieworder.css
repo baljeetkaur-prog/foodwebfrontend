@@ -1,0 +1,156 @@
+body{
+    padding:0; 
+    margin:0; 
+}
+.vieworders{
+    padding: 30px; 
+    background-color:#f4f6f8;
+    min-height: 100vh; 
+}
+.ordercontainer{
+    background-color: #fff; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+.ordercontainer h2{
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333; 
+}
+.ordercontainer input[type="date"]{
+    padding: 8px 12px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    margin-right: 10px; 
+}
+.ordercontainer button{
+    padding: 8px 18px; 
+    font-size: 16px; 
+    background-color: #ff7043;
+    border: none; 
+    color: #fff; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+.ordercontainer button:hover {
+    background-color: #e64a19;
+}
+.table{
+    width: 100%; 
+    margin-top: 20px; 
+    border-collapse: collapse; 
+}
+.table th, .table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+.table thead {
+    background-color: #ff7043;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table td button:hover {
+    background-color: #d32f2f;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #ff7043;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.modal-body p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background-color: #f1f1f1;
+}
+
+.modal .btn {
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal .btn-success {
+    background-color: #f44336;
+    border: none;
+    color: white;
+}
+
+.modal .btn-success:hover {
+    background-color: #d32f2f;
+}
+
+.modal .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.modal .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.form-select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 10px;
+}

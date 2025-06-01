@@ -1,0 +1,50 @@
+body{
+    margin:0; 
+    padding:0; 
+}
+.changepasscontainer{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    min-height: 75vh; 
+    padding: 20px; 
+    background: #fff3e0;
+}
+.changepassform{
+    background: #fff; 
+    padding: 30px 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px; 
+    display: flex; 
+    flex-direction: column; 
+}
+.changepasshead{
+    text-align: left; 
+    padding-left: 8px; 
+    margin-bottom: 40px; 
+    color: #c0392b;
+    font-weight: bold;
+    border-left: 3px solid #c0392b;
+    border-radius: 5px; 
+}
+.changepassform input{
+    padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px; 
+     font-size: 16px; 
+}
+.changepassbtn{
+    padding: 12px; 
+     background-color: #ff7043;
+     color: white; 
+     border: none; 
+     border-radius: 6px; 
+     font-weight: bold; 
+     cursor: pointer; 
+     transition: background-color 0.3s; 
+}
+.changepassbtn:hover {
+  background-color: #e65100;
+}

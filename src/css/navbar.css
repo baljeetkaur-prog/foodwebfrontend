@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+html,body{
+    margin:0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+}
+.navcontainer{
+    display: flex; 
+    background:  linear-gradient(to right, #f2994a, #f2c94c);
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px; 
+    padding: 15px 20px; 
+    margin-bottom:0;  
+    z-index: 1000;
+    position: sticky; 
+    top:0; 
+}
+.toprow{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+.nav-item-logo{
+    font-family: 'Brush Script MT', 'cursive'; 
+    font-size: 2.2rem; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: black; 
+     white-space: nowrap;
+}
+.rightside{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    gap: 5px; 
+}
+.authlinks{
+    display: flex; 
+    gap: 15px; 
+    font-size: 0.95rem;
+}
+.nav-item-login, .nav-item-signup, .nav-item-logout{
+    text-decoration: none; 
+    font-weight: 600; 
+    color: black; 
+}
+.nav-item-logout{
+   background-color: #333;
+color: white;
+border-radius: 5px;
+padding: 5px; 
+width: 150px; 
+}
+.nav-item-logout:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
+}
+.nav-item-login:hover,
+.nav-item-signup:hover {
+    text-decoration: underline;
+}
+.searchbox{
+    width: 400px; 
+    flex-grow:1; 
+    margin: 0 20px;
+}
+.searchbar{
+    width: 100%; 
+    padding: 8px 12px; 
+    font-size: 14px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+.navlinks{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+    flex-grow: 1; 
+    align-items: center;
+}
+.nav-item{
+    text-decoration: none; 
+    font-size: 1.1rem; 
+    font-weight: 500; 
+    padding: 15px 34px; 
+    color: black; 
+    transition: all 0.3s ease; 
+    border-radius: 6px; 
+}
+.nav-item:hover{
+    background-color: black; 
+    color: white; 
+}
+.nav-item.active{
+    background-color: black; 
+    color: white; 
+}
+.carticon{
+    margin-left: 10px; 
+    position: relative; 
+}
+.cartcount{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+@media (max-width: 768){
+    .toprow{
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px; 
+    }
+    .rightside{
+        align-items: flex-start; 
+        width: 100%; 
+    }
+    .searchbox{
+        width: 100%; 
+    }
+    .navlinks{
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .nav-item{
+        padding: 10px 20px; 
+        width: 100%; 
+        text-align: center; 
+    }
+}

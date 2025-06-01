@@ -1,0 +1,41 @@
+body{
+    padding:0; 
+    margin: 0; 
+}
+.smallgallery{
+    display: flex; 
+    padding: 40px 30px; 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+    box-sizing: border-box; 
+}
+.imagetextwrap{
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+.imagecontainer{
+    display: flex; 
+    gap:10px; 
+}
+.imagecontainer img{
+    border-radius: 8px; 
+    transition: all 0.3s ease; 
+}
+.imagecontainer img:hover{
+    transform: scale(1.05); 
+    cursor: grabbing; 
+}
+.galleryinner{
+    font-size: 1rem; 
+    margin-top: -10px; 
+}
+.smallsechead3{
+    font-weight: bold; 
+    color: #c0392b; 
+    padding-bottom: 0; 
+}
+.galleryinner p{
+    font-size: 15px;  
+}

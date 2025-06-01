@@ -1,0 +1,14 @@
+body{
+    padding: 0; 
+    margin: 0;
+}
+footer{
+    z-index: 999; 
+}
+footer p{
+    padding: 5px 2px 5px; 
+    margin-bottom:0; 
+    text-align: center; 
+    background-color: rgba(179, 5, 5, 0.836);
+    color: white; 
+}

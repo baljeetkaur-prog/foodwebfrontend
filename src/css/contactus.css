@@ -1,0 +1,156 @@
+.contactuscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background: #fff3e0;
+}
+.contactleft {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactushead {
+  font-size: 26px;
+  color: #c0392b;
+  margin-bottom: 20px;
+  font-weight: bold; 
+  border-left: 3px solid #c0392b;
+  border-radius: 5px; 
+  text-align: left; 
+  padding-left: 8px; 
+}
+
+.contactemail,
+.contactphone {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.lefth2 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: bold; 
+  text-align: left; 
+  color: #b72828;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.social-icons a {
+  color: #ff7043;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #e65100;
+}
+
+.contactleft p {
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.contactbutton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactbutton:hover {
+  background-color: #e65100;
+}
+.contactright {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactright form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactright input,
+.contactright textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contactright textarea {
+  min-height: 100px;
+}
+
+.contactformbtn {
+  padding: 12px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactformbtn:hover {
+  background-color: #e65100;
+}
+
+.contactright p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.contactright a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.contactright a:hover {
+  text-decoration: underline;
+}
+
+#recaptcha-container {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactuscontainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contactleft,
+  .contactright {
+    width: 100%;
+  }
+}
